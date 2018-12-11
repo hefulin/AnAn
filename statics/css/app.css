@@ -1,0 +1,317 @@
+@font-face {
+    font-family: 'iconfont';  /* project id 527810 */
+    src: url('//at.alicdn.com/t/font_527810_ncu2p4lz3erk9.eot');
+    src: url('//at.alicdn.com/t/font_527810_ncu2p4lz3erk9.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_527810_ncu2p4lz3erk9.woff') format('woff'),
+    url('//at.alicdn.com/t/font_527810_ncu2p4lz3erk9.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_527810_ncu2p4lz3erk9.svg#iconfont') format('svg');
+}
+
+body{
+    background: #fff;
+}
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:1.125rem;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class*=icons-]:before{
+    font-family:"iconfont" !important;
+    font-size:1.125rem;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icons-ea25:before{
+    content:"\e600";
+    font-size:1.5rem;
+}
+.icons-e616:before{
+    content:"\e616";
+    font-size:1rem;
+}
+.icons-e621:before{
+    content:"\e621";
+    font-size:1rem;
+}
+.icons-e60c:before{
+    content:"\e60c";
+    font-size:1rem;
+}
+
+.wt-green{
+    color:#62ab00;
+}
+.wt-dblue{
+    color:#29a2f5;
+}
+.wt-orange{
+    color:#f66e3c;
+}
+.wt-b-dblue{
+    background:#5d85ff;
+}
+.wt-b-yellow{
+    background:#fcbe60;
+}
+
+.wt-linear-blue {
+    color: #ffffff;
+    /*background-image: -webkit-linear-gradient(90deg, #66c4ff, #5d85ff);
+    background-image: linear-gradient(90deg, #66c4ff, #5d85ff);*/
+    background: #29a2f5;
+}
+
+/** redview */
+.col-red{
+    color:#fff;
+    font-weight: 700;
+}
+
+a{
+    color: #000000;
+}
+ul{
+    list-style: none;
+    margin:0rem;
+}
+.pad-left-10{
+    padding-left:0.625rem;
+}
+/** 对组件的修改**/
+.group-clear{
+    margin:0rem !important;
+    /* margin-bottom: 1.25rem !important; */
+}
+.group-top-10{
+    margin-top:0.625rem !important;
+    /* margin-bottom: 1.25rem !important; */
+} 
+.tabbar{
+    background: #ffffff !important;
+}
+
+/****/
+.layui-timeline{
+    padding-left:5px;
+}
+.layui-timeline-item{
+    position: relative;
+    padding: 10px 0;
+    font-size:0.875rem;
+    color:#666;
+}
+.layui-timeline-item:first-child:before{
+    display: block;
+}
+.layui-timeline-item:before{
+    content:'';
+    position: absolute;
+    left:5px;
+    top:0;
+    z-index:0;
+    width:1px;
+    height:100%;
+}
+.layui-timeline-item:before, hr{
+    background-color:#e6e6e6;
+}
+.layui-circle{
+    position: absolute;
+    left:1px;
+    top:15px;   
+    width:10px;
+    height:10px;
+    background-color:#0e90d2;
+    border-radius:5px; /* 图形的半径 */
+}
+.layui-timeline-axis{
+    position: absolute;
+    left:-5px;
+    top:0;
+    z-index:10;
+    width:20px;
+    height:20px;
+    line-height: 20px;
+    background-color: #5fb878;
+    color:#5fb878;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 10px;   
+}
+.layui-timeline-content{
+    padding-left:25px;
+}
+
+/** 通用颜色类 **/
+.label-red{
+    color:#ffffff;
+    background: #fe5758;
+}
+
+
+/** 取水户 **/
+.wt-top-search{
+    padding: 0.625rem 0rem 0rem 0.625rem;
+    background-color: #FFFFFF;
+
+}
+.querygroup{
+    background-color: #e5e5e5;
+}
+.h-search{
+    -webkit-box-flex:1;
+    background-color:#f2f2f7;
+    height: 30px;
+    line-height: 30px;
+    border-radius:4px;
+    color:#999;
+    text-align: center;
+    margin-right:10px;
+    font-size:0.75rem;
+}
+.h-search-ico{
+    display:inline-block;
+    height: 10px;
+    width:3.4%;
+    border-radius:100%;
+    border:1px solid #999;
+    position: relative;
+    margin-right:6px;
+}
+.h-search-ico::after{
+    content:'';
+    position: absolute;
+    left: 11px;
+    top:10px;
+    height: 4px;
+    width:1px;
+    background:#999;
+    -webkit-transform:rotate(-35deg);
+    transform:rotate(-35deg);
+}
+
+.bottom-load-wrapper {
+  line-height: 50px;
+  text-align: center;
+}
+.icon-arrow {
+  transition: .2s;
+  transform: rotate(180deg);
+}
+.icon-loading {
+  transform: rotate(0deg);
+  animation-name: loading;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes loading
+{
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+/*****************取水户******************/
+
+.wt-bar-i-24{
+    display: block;
+    height:1.55rem;
+    width:1rem;
+    margin:0 auto;
+    float:left;
+    padding:0 0.625rem;
+    line-height: 1.55rem;
+}
+
+.cell-box-left{
+    border-bottom:1px solid #e3e3e3;
+    text-align: left;
+}
+
+.cell-box{
+    border-bottom:1px solid #e3e3e3;
+    text-align: center;
+}
+
+.tabs-nav{
+    padding:10px;
+}
+
+.btn-hollow.btn-primary.active, .btn-hollow.btn-primary:active {
+    background-color: #29a2f5 !important;
+}
+
+.btn-hollow.btn-primary:first-child {
+    border-radius:30px 0 0 30px;
+}
+.btn-hollow.btn-primary:last-child {
+    border-radius:0px 30px 30px 0px;
+}
+
+
+.wt-bar-i-16 {
+    display: block;
+    height: 1.3125rem;
+    width: 1rem;
+    margin: 0 auto;
+    float: left;
+    padding: 0 0.625rem;
+    line-height: 1.3125rem;
+    /* box-shadow: 0 0 5px rgba(250,0,0,0.5); */
+}
+
+.wt-title {
+    color: #3d3d3d;
+    padding: 0.625rem 0.9375rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.wt-title .red-c {
+    background: url('../../statics/images/article.png') no-repeat;
+    background-size: 4px;
+}
+
+.route-r{
+    background: url('../../statics/images/tubiao_03.png') no-repeat;
+    background-size: 100%;
+}
+
+.route-timeline-item{
+    display: block;
+}
+
+.route-timeline-item.cur i{
+    background: url('../../statics/images/arrow_yellow.png') no-repeat;
+    background-size: 100%;
+}
+.route-timeline-item.none i{
+    background: url('../../statics/images/arrow_grey.png') no-repeat;
+    background-size: 100%;
+}
+
+.route-timeline-item.cur .route-timline-h,.route-timeline-item.none .route-timline-h{
+    padding-left:10px;
+    display:block;
+    padding-top:5px;
+}
+.route-timeline-item.cur .desc{
+    height:80px;
+    padding-left:20px;
+    display: block;
+    border-left:1px dashed rgb(254, 155, 30);
+}
+.route-timeline-item.none .desc{
+    height:80px;
+    padding-left:20px;
+    display: block;
+    border-left:1px dashed rgb(221, 221, 221);
+}
