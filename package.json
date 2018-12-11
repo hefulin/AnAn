@@ -1,7 +1,7 @@
 {
-  "name": "water",
+  "name": "AnAn",
   "description": "vue",
-  "author": "yuanmin@baosight.com",
+  "author": "He",
   "private": true,
   "scripts": {
     "devloc": "cross-env NODE_ENV=development webpack-dev-server --open --inline --hot ",
